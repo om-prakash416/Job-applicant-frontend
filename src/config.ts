@@ -8,14 +8,15 @@ interface Config {
 
 const config: Config = {
   api: {
-    // API_URL: "https://tbapi-jtu7.onrender.com/api/",
-    API_URL: "http://localhost:4000/api/",
+   API_URL: import.meta.env.VITE_API_URL,
+    // API_URL: "http://localhost:4000/api/",
   },
 };
 export const configImage: Config = {
   api: {
     // API_URL: "https://tbapi-jtu7.onrender.com/api/",
-    API_URL: "http://localhost:4000/api/",
+     API_URL:import.meta.env.VITE_API_IMAGE_URL,
+    // API_URL: "http://localhost:4000/api/",
   },
 };
 
